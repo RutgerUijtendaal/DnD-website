@@ -1,0 +1,18 @@
+.donate-card {
+  max-width: 400px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+button.cyberpunk2077.small {
+  padding: 10px 30px;
+}
+
+button.cyberpunk2077.small:after {
+  content: "";
+}
+
+mat-card-header mat-card-title {
+  font-size: 30px;
+  font-family: Barlow;
+}

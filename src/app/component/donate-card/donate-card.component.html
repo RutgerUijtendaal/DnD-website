@@ -1,0 +1,15 @@
+<mat-card class="donate-card">
+  <mat-card-header>
+    <mat-card-title>{{ title }}</mat-card-title>
+    <mat-card-subtitle>{{ subTitle }}</mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image [src]="imagePath">
+  <mat-card-content>
+    <p>
+      {{ content }}
+    </p>
+  </mat-card-content>
+  <mat-card-actions fxLayout="row" fxLayoutAlign="end">
+    <button class="cyberpunk2077 small">{{ actionText }}</button>
+  </mat-card-actions>
+</mat-card>

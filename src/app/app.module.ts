@@ -13,6 +13,7 @@ import { NavBarComponent } from './component/nav-bar/nav-bar.component';
 import { BaseViewComponent } from './views/base-view/base-view.component';
 import { AppMaterialModule } from './app-material/app-material.module';
 import { ContactViewComponent } from './views/contact-view/contact-view.component';
+import { DonateCardComponent } from './component/donate-card/donate-card.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { ContactViewComponent } from './views/contact-view/contact-view.componen
     NavBarComponent,
     BaseViewComponent,
     ContactViewComponent,
+    DonateCardComponent,
   ],
   imports: [
     BrowserModule,
