@@ -2,7 +2,6 @@ import { transition, trigger, useAnimation } from '@angular/animations';
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { fromBottomEasing, moveFromRightFade } from 'ngx-router-animations';
-import { slideInAnimation } from './animations/slideInAnimation';
 
 @Component({
   selector: 'app-root',

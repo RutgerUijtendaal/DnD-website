@@ -2,6 +2,7 @@
   max-width: 400px;
   margin-left: 20px;
   margin-right: 20px;
+  min-height: 450px;
 }
 
 button.cyberpunk2077.small {
@@ -12,7 +13,29 @@ button.cyberpunk2077.small:after {
   content: "";
 }
 
+.mat-card {
+  display:flex;
+  flex-direction: column;
+}
+
+.mat-card-header {
+  flex-shrink: 0;
+}
+
+.mat-card-content {
+  flex-grow: 1;
+  overflow: auto;
+}
+
 mat-card-header mat-card-title {
   font-size: 30px;
   font-family: Barlow;
+}
+
+mat-card-content>p {
+  font-size: 20px;
+}
+
+.card-img {
+  height: 200px;
 }

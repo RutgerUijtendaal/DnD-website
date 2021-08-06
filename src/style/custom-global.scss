@@ -1,10 +1,21 @@
 .full-page-height {
   min-height: 100%;
-  min-width: 100vw;
+  min-width: 98vw;
+	width: 100%;
+	
+	&-main {
+		@extend .full-page-height;
+		min-width: 100vw;
+	}
 }
 
 .spacer {
   flex: 1 1 auto;
+}
+
+.cyberpunk-filler {
+	background-color: #000; 
+	height: 5vh;
 }
 
 .router-wrapper {

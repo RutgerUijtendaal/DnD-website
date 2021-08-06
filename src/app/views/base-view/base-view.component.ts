@@ -1,8 +1,7 @@
 import { transition, trigger, useAnimation } from '@angular/animations';
 import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { moveFromBottom, moveFromLeftFade, moveFromRightFade, rotateCubeToLeft } from 'ngx-router-animations';
-import { slideInAnimation } from 'src/app/animations/slideInAnimation';
+import { moveFromLeftFade, moveFromRightFade } from 'ngx-router-animations';
 
 @Component({
   selector: 'app-base-view',
