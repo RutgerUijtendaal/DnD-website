@@ -14,6 +14,7 @@ import { BaseViewComponent } from './views/base-view/base-view.component';
 import { AppMaterialModule } from './app-material/app-material.module';
 import { ContactViewComponent } from './views/contact-view/contact-view.component';
 import { DonateCardComponent } from './component/donate-card/donate-card.component';
+import { StoryComponent } from './component/story/story.component';
 
 @NgModule({
   declarations: [
@@ -26,15 +27,10 @@ import { DonateCardComponent } from './component/donate-card/donate-card.compone
     BaseViewComponent,
     ContactViewComponent,
     DonateCardComponent,
+    StoryComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    AppMaterialModule ,
-    BrowserAnimationsModule,
-    FlexLayoutModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, AppMaterialModule, BrowserAnimationsModule, FlexLayoutModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
