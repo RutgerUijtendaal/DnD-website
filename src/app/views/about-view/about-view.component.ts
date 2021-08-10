@@ -30,7 +30,7 @@ export class AboutViewComponent implements OnInit {
     {
       name: 'JD',
       function: 'Treasurer, Gun Operator',
-      imagePath: 'assets/img/team/jd_anon.png',
+      imagePath: 'assets/img/team/jd.png',
       content: 'Sneaky, stealthy... and he\'s already got your wallet. \n\nGood with coins, better with a knife and gun.'
     },
     {
