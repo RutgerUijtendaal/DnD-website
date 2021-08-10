@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class ContactViewComponent implements OnInit {
   title = 'CONTACT ME';
   subtitle = 'Any tips, info, dirt on corpos';
-  value = '';
+  value = '<Message>';
   buttonText = 'Submit_';
 
   constructor() {}

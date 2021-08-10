@@ -34,7 +34,7 @@ export class AboutViewComponent implements OnInit {
       content: 'Sneaky, stealthy... and he\'s already got your wallet. \n\nGood with coins, better with a knife and gun.'
     },
     {
-      name: 'Dr Steele',
+      name: 'Dr Steel',
       function: 'Science Officer',
       imagePath: 'assets/img/team/caliel_anon.png',
       content: 'Ex-corpo, alcoholic, genius? \n\nAlways has a bottle nearby, always knows how to fix your computer.'
