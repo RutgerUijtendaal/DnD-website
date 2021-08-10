@@ -3,7 +3,7 @@
   width: 100%;
   height: 100%;
   max-width: 1280px;
-  min-width: 640px;
+  min-width: 320px;
   margin-bottom: 3% !important;
 }
 
@@ -27,4 +27,10 @@
 
  h1 {
    font-family: oxanium;
+   line-height: 40px;
+ }
+
+ p.content {
+  font-size: 20px;
+  white-space: pre-line;
  }

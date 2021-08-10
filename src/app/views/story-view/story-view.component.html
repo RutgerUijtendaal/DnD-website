@@ -1,4 +1,4 @@
 <section class="cyberpunk cp_muted">
   <app-title-banner [title]="title" [subtitle]="subtitle"></app-title-banner>
 </section>
-<app-story *ngFor="let story of stories; let odd = odd" [headline]="story.headline" [imgPath]="story.imgPath" [content]="story.content" [odd]="odd"> </app-story>
+<app-story *ngFor="let story of stories" [headline]="story.headline" [imgPath]="story.imgPath" [content]="story.content"> </app-story>

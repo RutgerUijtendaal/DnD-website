@@ -8,13 +8,15 @@ import { Component, Input, OnInit } from '@angular/core';
 export class IconTextComponent implements OnInit {
   @Input() icon: string = "";
   @Input() text: number = 0;
+  @Input() multiplier: number = 10;
+
   clicked = false;
 
   constructor() { }
 
   ngOnInit(): void {
     if(this.text === 0 ) {
-      this.text = Math.floor(Math.random()*10)+1;
+      this.text = Math.floor(Math.random()*this.multiplier)+1;
     }
   }
 
