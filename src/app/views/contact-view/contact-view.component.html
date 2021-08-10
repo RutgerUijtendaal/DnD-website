@@ -1,5 +1,17 @@
-<section class="cyberpunk">
-  <p class="cyberpunk inverse">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-</section>
-<section class="cyberpunk black">
-</section>
+<div class="full-page-height-main">
+  <section class="cyberpunk">
+    <app-title-banner [title]="title" [subtitle]="subtitle"></app-title-banner>
+  </section>
+  <section class="cyberpunk black">
+    <div fxLayout="row wrap" fxLayoutAlign="start center">
+      <h1 class="cyberpunk cp_muted">
+        All messages are sent encrypted, router through 7 proxies and delivered anonymously
+      </h1>
+      <textarea matInput class="cyberpunk cp_inverted_input" [(ngModel)]="value"></textarea>
+      <div fxFlex="grow" fxLayout="row" fxLayoutAlign="end end">
+        <button (click)="send()" class="cyberpunk2077 red">{{ buttonText }}</button>
+      </div>
+    </div>
+  </section>
+  <section class="cyberpunk"></section>
+</div>

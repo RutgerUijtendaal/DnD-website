@@ -3,3 +3,17 @@
   z-index: 9999;
   height: 80px;
 }
+
+@media (max-width: 1200px) {
+  .mat-toolbar {
+    height: 160px;
+  }
+
+  button {
+    padding: 3vw 6vw !important;
+  }
+
+  button:after {
+    content: "";
+  }
+}
