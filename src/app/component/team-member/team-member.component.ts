@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-team-member',
@@ -6,6 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./team-member.component.scss']
 })
 export class TeamMemberComponent implements OnInit {
+  @Input() name = 'Title';
+  @Input() function = 'Subtitle';
+  @Input() imagePath = 'assets/img/team/sy.png'
+  @Input() content = 'cum'
 
   constructor() { }
 

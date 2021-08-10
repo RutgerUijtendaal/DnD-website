@@ -1,3 +1,29 @@
-<section class="cyberpunk cp_muted full-page-height-main">
-  <app-title-banner [title]="title" [subtitle]="subtitle"></app-title-banner>
-</section>
+<div class="full-page-height-main">
+  <section class="cyberpunk cp_muted">
+    <app-title-banner [title]="title" [subtitle]="subtitle"></app-title-banner>
+  </section>
+  <section class="cyberpunk black cp_section_small" fxLayout="row" fxLayoutAlign="center center">
+    <h1 class="cyberpunk">Bosman</h1>
+  </section>
+  <div fxLayout="row wrap" fxLayout.sm="column" fxLayoutAlign="center center">
+    <app-team-member
+      *ngFor="let member of members | slice:0:1"
+      [name]="member.name"
+      [function]="member.function"
+      [imagePath]="member.imagePath"
+      [content]="member.content"
+    ></app-team-member>
+  </div>
+  <section class="cyberpunk black cp_section_small" fxLayout="row" fxLayoutAlign="center center">
+    <h1 class="cyberpunk">Team</h1>
+  </section>
+  <div fxLayout="row wrap" fxLayout.sm="column" fxLayoutAlign="center center">
+    <app-team-member
+      *ngFor="let member of members | slice:1:5"
+      [name]="member.name"
+      [function]="member.function"
+      [imagePath]="member.imagePath"
+      [content]="member.content"
+    ></app-team-member>
+  </div>
+</div>

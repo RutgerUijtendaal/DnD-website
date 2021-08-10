@@ -9,12 +9,15 @@
       <mat-icon>warning</mat-icon>
     </div>
     <div fxLayout="row wrap" fxLayout.sm="column" fxLayoutAlign="center center">
-      <app-donate-card fxFlex *ngFor="let card of cards"
+      <app-donate-card
+        fxFlex
+        *ngFor="let card of cards"
         [title]="card.title"
         [subTitle]="card.subTitle"
         [imagePath]="card.imagePath"
         [content]="card.content"
-        [actionText]="card.actionText">
+        [actionText]="card.actionText"
+      >
       </app-donate-card>
     </div>
   </section>
