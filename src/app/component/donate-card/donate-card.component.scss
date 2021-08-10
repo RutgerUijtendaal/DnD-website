@@ -1,7 +1,7 @@
 .donate-card {
   width: 320px;
   margin: 20px;
-  min-height: 450px;
+  min-height: 480px;
 }
 
 button.cyberpunk2077.small {
@@ -31,7 +31,8 @@ mat-card-header mat-card-title {
   font-family: Barlow;
 }
 
-mat-card-content>p {
+mat-card-content p {
+  white-space: pre-line;
   font-size: 20px;
 }
 

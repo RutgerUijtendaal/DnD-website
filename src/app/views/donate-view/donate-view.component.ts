@@ -13,7 +13,7 @@ export class DonateViewComponent implements OnInit {
       title: "One Time Donation",
       subTitle: "No commitment, just support",
       imagePath: "assets/img/tyr.jpg",
-      content: "You like what I do? Want to keep fighting the good fight? Donate now and become part of the cause",
+      content: "Want to keep fighting the good fight?\n\n Donate now and become part of the cause",
       actionText: "DONATE"
     },
     {
@@ -27,7 +27,7 @@ export class DonateViewComponent implements OnInit {
       title: "Tier 2: Burn it down",
       subTitle: "Monthly reoccurring",
       imagePath: "assets/img/mining-colony.jpg",
-      content: "10 Hundos each month supports regular stories. Fight the establishment, become a warrior, donate now.",
+      content: "10 Hundos each month supports regular stories. \n Fight the kojos, become a warrior, subscribe now.",
       actionText: "SUBSCRIBE"
     }
   ]

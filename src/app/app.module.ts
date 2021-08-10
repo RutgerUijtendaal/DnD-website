@@ -17,6 +17,7 @@ import { DonateCardComponent } from './component/donate-card/donate-card.compone
 import { StoryComponent } from './component/story/story.component';
 import { IconTextComponent } from './component/icon-text/icon-text.component';
 import { TitleBannerComponent } from './component/title-banner/title-banner.component';
+import { TeamMemberComponent } from './component/team-member/team-member.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { TitleBannerComponent } from './component/title-banner/title-banner.comp
     StoryComponent,
     IconTextComponent,
     TitleBannerComponent,
+    TeamMemberComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, AppMaterialModule, BrowserAnimationsModule, FlexLayoutModule],
   providers: [],

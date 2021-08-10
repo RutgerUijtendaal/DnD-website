@@ -3,6 +3,11 @@
     <app-title-banner [title]="title" [subtitle]="subtitle"></app-title-banner>
   </section>
   <section class="cyberpunk black">
+    <div fxLayout="row" fxLayoutAlign="center center">
+      <mat-icon>warning</mat-icon>
+      <h1>DO NOT DONATE, CORPO KOJOS SEIZED LIBERTY NEWS ACCOUNTS</h1>
+      <mat-icon>warning</mat-icon>
+    </div>
     <div fxLayout="row wrap" fxLayout.sm="column" fxLayoutAlign="center center">
       <app-donate-card fxFlex *ngFor="let card of cards"
         [title]="card.title"
