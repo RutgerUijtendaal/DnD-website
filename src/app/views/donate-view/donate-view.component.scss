@@ -1,3 +1,10 @@
 h1 {
   margin: 30px;
 }
+
+@media (max-width: 601px) {
+  h1 {
+    margin: 10px;
+    font-size: 4vw;
+  }
+}

@@ -1,14 +1,27 @@
 .donate-banner > div > h1 {
   font-size: 80px;
-  color: var(--blue-color);
   line-height: 80px;
+  color: var(--blue-color);
 }
 
 .donate-banner > div > h3 {
-  font-size: 50px;
-  line-height: 50px;
+  font-size: 40px;
+  line-height: 40px;
 }
 
 .donate-banner > div > h3:after {
   content: '';
+}
+
+@media (max-width: 601px) {
+  .donate-banner > div > h1 {
+    font-size: 8vw;
+    line-height: 8vw;
+  }
+
+  .donate-banner > div > h3 {
+    font-size: 5vw;
+    line-height: 5vw;
+  }
+  
 }

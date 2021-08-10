@@ -26,4 +26,18 @@
       [content]="member.content"
     ></app-team-member>
   </div>
+  <section class="cyberpunk black cp_section_small" fxLayout="row" fxLayoutAlign="center center">
+    <h1 class="cyberpunk cp_muted">Support</h1>
+  </section>
+  <div fxLayout="row wrap" fxLayout.sm="column" fxLayoutAlign="center center">
+    <app-team-member
+      *ngFor="let member of members | slice:5"
+      [name]="member.name"
+      [function]="member.function"
+      [imagePath]="member.imagePath"
+      [content]="member.content"
+    ></app-team-member>
+  </div>
+  <section class="cyberpunk cp_section_small" fxLayout="row" fxLayoutAlign="center center">
+  </section>
 </div>
