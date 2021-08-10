@@ -15,6 +15,8 @@ import { AppMaterialModule } from './app-material/app-material.module';
 import { ContactViewComponent } from './views/contact-view/contact-view.component';
 import { DonateCardComponent } from './component/donate-card/donate-card.component';
 import { StoryComponent } from './component/story/story.component';
+import { IconTextComponent } from './component/icon-text/icon-text.component';
+import { TitleBannerComponent } from './component/title-banner/title-banner.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +30,8 @@ import { StoryComponent } from './component/story/story.component';
     ContactViewComponent,
     DonateCardComponent,
     StoryComponent,
+    IconTextComponent,
+    TitleBannerComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, AppMaterialModule, BrowserAnimationsModule, FlexLayoutModule],
   providers: [],

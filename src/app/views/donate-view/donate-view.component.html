@@ -1,22 +1,15 @@
 <div class="full-page-height-main">
   <section class="cyberpunk">
-    <div fxLayout="row wrap" fxLayoutAlign="center center" class="donate-banner">
-      <div fxFlex="grow" fxLayoutAlign="center center">
-        <h1 class="cyberpunk glitched donate-text">DONATE NOW</h1>
-      </div>
-      <div fxFlex="grow" fxLayoutAlign="center center">
-        <h3 class="cyberpunk donate-text">support the cause, fuck the corpos</h3>
-      </div>
-    </div>
+    <app-title-banner [title]="title" [subtitle]="subtitle"></app-title-banner>
   </section>
   <section class="cyberpunk black">
-
-    <div fxLayout="row wrap" fxLayoutAlign="center center">
+    <div fxLayout="row wrap" fxLayout.sm="column" fxLayoutAlign="center center">
       <app-donate-card fxFlex *ngFor="let card of cards"
         [title]="card.title"
         [subTitle]="card.subTitle"
         [imagePath]="card.imagePath"
-        [content]="card.content">
+        [content]="card.content"
+        [actionText]="card.actionText">
       </app-donate-card>
     </div>
   </section>

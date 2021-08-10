@@ -1,0 +1,12 @@
+.donate-banner > div > h1 {
+  font-size: 80px;
+  color: var(--blue-color);
+}
+
+.donate-banner > div > h3 {
+  font-size: 50px;
+}
+
+.donate-banner > div > h3:after {
+  content: '';
+}

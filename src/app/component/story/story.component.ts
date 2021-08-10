@@ -10,6 +10,7 @@ export class StoryComponent implements OnInit {
   @Input() headline = '';
   @Input() imgPath = '';
   @Input() content = '';
+  sub_count = 269
 
   constructor() { }
 

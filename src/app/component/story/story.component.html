@@ -1,3 +1,28 @@
-<h1 class="cyberpunk">{{ headline }}</h1>
-<img [src]="imgPath" alt="" class="cyberpunk" />
-<p class="cyberpunk inverse" [ngClass]="odd ? '' : 'dotted'">{{ content }}</p>
+<section class="cyberpunk black">
+  <h1 class="cyberpunk cp_muted">{{ headline }}</h1>
+</section>
+<section class="cyberpunk">
+  <div fxLayout="row" fxLayout.sm="column" fxLayoutGap="10%">
+    <div class="img-container" fxFlex>
+      <img [src]="imgPath" class="cyberpunk" />
+      <div class="overlay">
+        <img src="assets/img/play-button.png" />
+      </div>
+    </div>
+    <div fxFlex>
+      <p class="cyberpunk cp_muted inverse" [ngClass]="odd ? '' : 'dotted'">{{ content }}</p>
+      <p class="cyberpunk cp_muted">
+        <span fxLayout="row" fxLayoutAlign="start center">
+          <img class="portrait" src="assets/img/portrait.png" />
+          <span fxLayout="column">
+            <span>YukonSy</span>
+            <span class="subcriber-count">{{ sub_count }} subscribers</span>
+          </span>
+          <span class="spacer"></span>
+          <app-icon-text [icon]="'thumb_up'" [text]="69"></app-icon-text>
+          <app-icon-text [icon]="'thumb_down'"></app-icon-text>
+        </span>
+      </p>
+    </div>
+  </div>
+</section>

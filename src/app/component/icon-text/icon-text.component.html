@@ -1,0 +1,6 @@
+<div fxLayout="row" fxLayoutAlign="center center">
+  <button mat-icon-button [color]="clicked ? 'primary' : ''" (click)="clickButton()">
+    <mat-icon>{{ icon }}</mat-icon>
+  </button>
+  <span class="icon-text">{{text}}</span>
+</div>
