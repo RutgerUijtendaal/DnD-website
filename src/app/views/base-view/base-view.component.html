@@ -1,4 +1,5 @@
 <app-nav-bar></app-nav-bar>
 <div class="router-wrapper" [@routeAnimations]="prepareRoute(outlet)">
   <router-outlet #outlet="outlet"></router-outlet>
+  <app-ad-popup class="ad-window" *ngIf="showAd" [@panelInOut] (closeAdEvent)="close()"></app-ad-popup>
 </div>

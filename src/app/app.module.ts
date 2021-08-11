@@ -18,6 +18,7 @@ import { StoryComponent } from './component/story/story.component';
 import { IconTextComponent } from './component/icon-text/icon-text.component';
 import { TitleBannerComponent } from './component/title-banner/title-banner.component';
 import { TeamMemberComponent } from './component/team-member/team-member.component';
+import { AdPopupComponent } from './component/ad-popup/ad-popup.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { TeamMemberComponent } from './component/team-member/team-member.compone
     IconTextComponent,
     TitleBannerComponent,
     TeamMemberComponent,
+    AdPopupComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, AppMaterialModule, BrowserAnimationsModule, FlexLayoutModule],
   providers: [],

@@ -3,17 +3,32 @@
   z-index: 9999;
   height: 80px;
 }
-
-@media (max-width: 1200px) {
-  .mat-toolbar {
-    height: 160px;
-  }
+@media (max-width: 1280px) {
+  // .mat-toolbar {
+  //   height: 160px;
+  // }
 
   button {
-    padding: 3vw 6vw !important;
+    padding: 2.5vw 5vw !important;
   }
 
   button:after {
     content: "";
+  }
+}
+
+@media (max-width: 960px) {
+  button {
+    padding: 2vw 4vw !important;
+  }
+
+  button:after {
+    content: "";
+  }
+}
+
+@media (max-width: 600px) {
+  .mat-toolbar {
+    height: 30vw;
   }
 }

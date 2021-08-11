@@ -3,3 +3,19 @@
   margin: 0;
   padding: 0;
 }
+
+.ad-window {
+  position: fixed;
+  bottom: 25%;
+  right: 0;
+  max-height: 50%;
+  max-width: 400px;
+  z-index: 99999;
+  background-color: white;
+}
+
+@media (max-width: 800px) {
+  .ad-window {
+    visibility: hidden;
+  }
+}

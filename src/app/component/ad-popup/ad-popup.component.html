@@ -1,0 +1,14 @@
+<div>
+  <div class="header-row" fxLayout="row" fxLayoutAlign="center center">
+    <p>Advertisement</p>
+    <span class="spacer"></span>
+    <button mat-icon-button color="warn" (click)="close()">
+      <mat-icon>close</mat-icon>
+    </button>
+  </div>
+  <img [src]="selected.imagePath">
+  <div fxLayout="column" fxLayoutAlign="center center">
+    <h1> {{selected.header}} </h1>
+    <p> {{selected.content}} </p>
+  </div>
+</div>
