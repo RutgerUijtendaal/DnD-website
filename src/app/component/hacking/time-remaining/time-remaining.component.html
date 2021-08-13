@@ -1,0 +1,15 @@
+<div fxFlex="100%">
+  <div fxLayout="row wrap">
+    <div class = "top-row" fxFlex="grow" fxLayout="row wrap" fxLayoutAlign="space-between center">
+      <h1>BREACH TIME REMAINING</h1>
+      <span class="spacer"></span>
+      <span class="timer">{{ game.timer.miliSecondsLeft | timer }}</span>
+    </div>
+    <mat-progress-bar
+      class="progress"
+      mode="determinate"
+      [color]="'accent'"
+      [value]="game.timer.progress"
+    ></mat-progress-bar>
+  </div>
+</div>

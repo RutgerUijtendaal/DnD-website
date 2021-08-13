@@ -1,0 +1,16 @@
+<div class="sequence-row">
+  <div class="sequence" *ngIf="sequence.active()" fxFlex="row" fxLayoutAlign="start start">
+    <app-hex-display *ngFor="let tile of spacingArray(sequence.spacing)" [tile]="emptyTile"></app-hex-display>
+    <app-hex-display
+      [ngClass]="tile.active ? 'active' : ''"
+      *ngFor="let tile of sequence"
+      [tile]="tile"
+    ></app-hex-display>
+  </div>
+  <div class="failed" [@panelInOut] *ngIf="sequence.failure()" fxFlex="row" fxLayoutAlign="start start">
+    <h3>FAILED</h3>
+  </div>
+  <div class="success" [@panelInOut] *ngIf="sequence.success()" fxFlex="row" fxLayoutAlign="start start">
+    <h3>INSTALLED</h3>
+  </div>
+</div>

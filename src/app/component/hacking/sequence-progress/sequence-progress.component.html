@@ -1,0 +1,8 @@
+<div class="progress-container" fxFlex="100%" fxLayout="row wrap" fxLayoutAlign="start center">
+  <div class="progress-header" fxFlex="100%">
+    <h3>SEQUENCE REQUIRED FOR UPLOAD</h3>
+  </div>
+  <div class="progress" fxFlex="100%">
+    <app-sequence-row *ngFor="let sequence of game.sequences" [sequence]="sequence"></app-sequence-row>
+  </div>
+</div>

@@ -1,0 +1,28 @@
+button {
+  width: 64px;
+  height: 64px;
+  font-size: 20px;
+  color: var(--hack-yellow-color);
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 0px;
+}
+
+button.clicked {
+  color: rgba(73, 73, 73, 0.9);
+}
+
+button.active {
+  background-color: var(--light-blue-color-opacity);
+}
+
+button.highlight {
+  background-color: var(--yellow-color-opacity);
+}
+
+button:hover:enabled {
+  background-color: var(--light-blue-color-opacity);
+  border: 2px solid var(--light-blue-color);
+  box-shadow: 0 0 1rem var(--light-blue-color); 
+}
+
+

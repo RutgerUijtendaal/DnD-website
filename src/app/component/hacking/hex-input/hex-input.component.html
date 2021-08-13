@@ -1,0 +1,9 @@
+<button
+  [disabled]="!enabled || isClicked"
+  (click)="click($event)"
+  (mouseenter)="tileEntered($event)"
+  (mouseleave)="tileLeft($event)"
+  [ngClass]="[enabled ? 'active' : '', tile.highlight ? 'highlight' : '', isClicked ? 'clicked' : '']"
+>
+  {{ tile.hexValue }}
+</button>

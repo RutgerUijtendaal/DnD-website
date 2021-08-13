@@ -13,12 +13,22 @@ h1 {
   }
 }
 
-@media (max-width: 1200px) {
+.annie-button {
+  margin-top: 20px;
+  width: 100px;
+  height: 100px;
+}
+
+@media (max-width: 1400px) {
   button {
     padding: 3vw 6vw !important;
   }
 
   button:after {
     content: "";
+  }
+
+  .annie-button {
+    visibility: hidden;
   }
 }

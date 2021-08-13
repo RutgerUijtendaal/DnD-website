@@ -1,0 +1,36 @@
+::ng-deep.mat-dialog-container {
+  padding: 0px !important;
+  background-color: black;
+  opacity: 95%;
+  border: 2px solid var(--yellow-color);
+  border-radius: 10px;
+  min-width: 1200px;
+  min-height: 720px;
+}
+
+.buffer-header {
+  border-left: 1px solid var(--yellow-color);
+}
+
+h3 {
+  color: var(--yellow-color);
+  margin: 10px 0px 10px 20px;
+  padding: 0;
+  position: initial;
+}
+
+.hack-dialog {
+  color: white;
+}
+
+.top-row {
+  padding: 0px 20px 10px 20px;
+  margin: 0px 0px 20px 0px;
+  background-color: var(--yellow-color-opacity);
+  border-top: 1px solid var(--yellow-color);
+  border-bottom: 1px solid var(--yellow-color);
+}
+
+.bottom-row {
+  margin: 0px 20px 20px 20px;
+}

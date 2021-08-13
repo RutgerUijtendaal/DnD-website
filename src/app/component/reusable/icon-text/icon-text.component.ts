@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { rndInt } from 'src/app/util/utilFunctions';
 
 @Component({
   selector: 'app-icon-text',
@@ -8,7 +9,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class IconTextComponent implements OnInit {
   @Input() icon: string = "";
   @Input() text: number = 0;
-  @Input() multiplier: number = 10;
+  @Input() max: number = 10;
 
   clicked = false;
 
@@ -16,7 +17,7 @@ export class IconTextComponent implements OnInit {
 
   ngOnInit(): void {
     if(this.text === 0 ) {
-      this.text = Math.floor(Math.random()*this.multiplier)+1;
+      this.text = rndInt(1, this.max)
     }
   }
 

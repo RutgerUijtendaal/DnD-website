@@ -1,0 +1,16 @@
+<div fxLayout="row wrap" class="hack-dialog">
+  <div class="header-row" fxFlex="100%" fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="20px">
+    <div fxFlex="500px"></div>
+    <div class="buffer-header" fxFlex="60%">
+      <h3 class="cyberpunk">BUFFER</h3>
+    </div>
+  </div>
+  <div class="top-row" fxFlex="100%" fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="20px">
+    <app-time-remaining fxFlex="500px" [game]="game"></app-time-remaining>
+    <app-buffer fxFlex="60%" [game]="game"></app-buffer>
+  </div>
+  <div class="bottom-row" fxFlex="100%" fxLayout="row" fxLayoutAlign="center start" fxLayoutGap="20px">
+    <app-grid fxFlex="500px" [game]="game" (tileClickedEvent)="tileClicked($event)"></app-grid>
+    <app-sequence-progress fxFlex="60%" [game]="game"></app-sequence-progress>
+  </div>
+</div>

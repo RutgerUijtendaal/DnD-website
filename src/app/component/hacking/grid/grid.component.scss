@@ -1,0 +1,12 @@
+.grid {
+  border: 2px solid var(--hack-yellow-color);
+  border-top: 0;
+  border-radius: 0px 10px 10px, 0px;
+}
+
+.grid-header {
+  padding-left: 20px;
+  color: black;
+  background-color: var(--hack-yellow-color);
+  border-radius: 20px 0px 0px 0px;
+}

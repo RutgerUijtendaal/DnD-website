@@ -1,0 +1,7 @@
+<div fxLayout="row" fxFlex="100%">
+  <div class="buffer" fxLayout="row">
+    <app-hex-display *ngFor="let tile of game.buffer" [tile]="tile"></app-hex-display>
+    <app-hex-display *ngIf="game.buffer.spaceLeft() > 0" [tile]="game.hoveredTile"></app-hex-display>
+    <app-hex-display *ngFor="let tile of remainingArray()" [tile]="emptyTile"></app-hex-display>
+  </div>
+</div>

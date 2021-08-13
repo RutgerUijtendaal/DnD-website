@@ -8,6 +8,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { FormsModule } from '@angular/forms';
 import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
 
 @NgModule({
   declarations: [],
@@ -20,6 +22,8 @@ import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
     MatInputModule,
     FormsModule,
     MatBottomSheetModule,
+    MatDialogModule,
+    MatProgressBarModule,
   ],
   exports: [
     MatToolbarModule,
@@ -29,6 +33,8 @@ import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
     MatInputModule,
     FormsModule,
     MatBottomSheetModule,
+    MatDialogModule,
+    MatProgressBarModule,
   ],
 })
 export class AppMaterialModule {}

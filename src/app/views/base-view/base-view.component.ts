@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { MatBottomSheet } from '@angular/material/bottom-sheet';
 import { NavigationEnd, Router, RouterOutlet } from '@angular/router';
 import { moveFromLeftFade, moveFromRightFade } from 'ngx-router-animations';
+import { rndInt } from 'src/app/util/utilFunctions';
 
 @Component({
   selector: 'app-base-view',
@@ -27,7 +28,7 @@ import { moveFromLeftFade, moveFromRightFade } from 'ngx-router-animations';
 })
 export class BaseViewComponent implements OnInit {
   showAd = false;
-  adChance = 0;
+  adChance = 5;
 
   constructor(private router: Router) {
     this.registerAdTrigger();
@@ -42,7 +43,7 @@ export class BaseViewComponent implements OnInit {
   registerAdTrigger() {
     this.router.events.subscribe((ev) => {
       if (ev instanceof NavigationEnd) {
-        if (Math.floor(Math.random() * this.adChance) === 0 && !this.showAd) {
+        if (rndInt(0, this.adChance) === 0 && !this.showAd) {
           this.showAd = true;
         }
       }

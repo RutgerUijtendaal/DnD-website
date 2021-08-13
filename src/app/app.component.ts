@@ -1,7 +1,7 @@
 import { transition, trigger, useAnimation } from '@angular/animations';
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { fromBottomEasing, moveFromRightFade } from 'ngx-router-animations';
+import { fromBottomEasing } from 'ngx-router-animations';
 
 @Component({
   selector: 'app-root',

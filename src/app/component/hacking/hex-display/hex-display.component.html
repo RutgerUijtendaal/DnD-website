@@ -1,0 +1,8 @@
+<div
+  class="value-container"
+  fxLayout="row"
+  fxLayoutAlign="center center"
+  [ngClass]="[tile.highlight ? 'highlight' : '', tile.correct ? 'correct' : '', tile.empty ? 'empty' : '']"
+>
+  <span class="value">{{ tile.hexValue }}</span>
+</div>

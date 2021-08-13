@@ -1,0 +1,17 @@
+<div class="grid-container" fxFlex="100%" fxLayout="row wrap" fxLayoutAlign="start center">
+  <div class="grid-header" fxFlex="100%">
+    <h3>CODE MATRIX</h3>
+  </div>
+  <div class="grid" fxFlex="100%" fxLayout="column" fxLayoutAlign="center center">
+    <div *ngFor="let row of game.grid.grid; let i = index">
+      <app-hex-input
+        *ngFor="let tile of row"
+        [tile]="tile"
+        [enabled]="tile.row === game.grid.enabledRow || tile.column === game.grid.enabledColumn"
+        (tileClickedEvent)="tileClicked(tile)"
+        (tileEnteredEvent)="tileEntered(tile)"
+        (tileLeftEvent)="tileLeft()"
+      ></app-hex-input>
+    </div>
+  </div>
+</div>

@@ -8,7 +8,10 @@
         All messages are sent encrypted, router through 7 proxies and delivered anonymously
       </h1>
       <textarea matInput class="cyberpunk cp_inverted_input" [(ngModel)]="value"></textarea>
-      <div fxFlex="grow" fxLayout="row" fxLayoutAlign="end end">
+      <div fxFlex="grow" fxLayout="row" fxLayoutAlign="space-between center">
+        <div>
+          <input class="annie-button" type="image" src="assets/img/annie.png" (click)="openHack()">
+        </div>
         <button (click)="send()" class="cyberpunk2077 red">{{ buttonText }}</button>
       </div>
     </div>

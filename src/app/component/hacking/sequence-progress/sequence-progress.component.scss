@@ -1,0 +1,16 @@
+.progress {
+  border: 2px solid var(--hack-yellow-color);
+  border-top: 0;
+  border-radius: 0px 10px 10px, 0px;
+}
+
+.progress-header {
+  padding-left: 20px;
+  color: var(--hack-yellow-color);
+  border: 2px solid var(--hack-yellow-color);
+  border-radius: 20px 0px 0px 0px;
+}
+
+h3 {
+  margin: 10px 0;
+}

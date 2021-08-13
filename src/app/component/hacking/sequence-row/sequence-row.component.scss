@@ -1,0 +1,19 @@
+.sequence-row {
+  min-height: 64px;
+}
+
+.active {
+  background-color: var(--light-blue-color-opacity);
+}
+
+h3 {
+  margin: 20px 0px 0px 20px;
+}
+
+.success {
+  background-color: var(--green-color);
+}
+
+.failed {
+  background-color: var(--red-color);
+}

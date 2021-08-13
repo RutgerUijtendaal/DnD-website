@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { HackingDialogComponent } from 'src/app/component/hacking/hacking-dialog/hacking-dialog.component';
 
 @Component({
   selector: 'app-contact-view',
@@ -11,7 +13,7 @@ export class ContactViewComponent implements OnInit {
   value = '<Message>';
   buttonText = 'Submit_';
 
-  constructor() {}
+  constructor(public dialog: MatDialog) {}
 
   ngOnInit(): void {}
 
@@ -22,5 +24,13 @@ export class ContactViewComponent implements OnInit {
     }, 1000);
 
     this.value = '';
+  }
+
+  openHack() {
+    const dialogRef = this.dialog.open(HackingDialogComponent);
+
+    dialogRef.afterClosed().subscribe((result) => {
+      console.log(`result: ${result}`);
+    });
   }
 }
