@@ -91,6 +91,9 @@ MIT
 @angular/router
 MIT
 
+ngx-countdown
+MIT
+
 ngx-router-animations
 MIT
 
