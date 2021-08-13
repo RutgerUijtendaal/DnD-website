@@ -122,6 +122,7 @@ export class Sequence extends Array<SequenceTile> {
     for (let index = 0; index < config.sequenceLength + this.sequenceNumber; index++) {
       this.push(SequenceTile.newSequence(index));
     }
+
     this[this.counter].active = true;
     return this;
   }

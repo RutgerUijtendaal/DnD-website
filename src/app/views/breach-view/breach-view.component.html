@@ -1,0 +1,22 @@
+<div class="full-page-height-main">
+  <section class="cyberpunk cp_muted">
+    <app-title-banner [title]="title" [subtitle]="subtitle"></app-title-banner>
+  </section>
+  <section class="cyberpunk black" *ngIf="highestHack === 0">
+    <div fxLayout="row" fxLayoutAlign="center center">
+      <mat-icon>warning</mat-icon>
+      <h1 class="warning">UNAUTHORIZED BREACH DETECTED</h1>
+      <mat-icon>warning</mat-icon>
+    </div>
+  </section>
+  <div *ngIf="highestHack !== 0">
+    <app-corpo-dirt
+      *ngFor="let hack of hacks | slice:0:highestHack"
+      [name]="hack.name"
+      [type]="hack.type"
+      [content]="hack.content"
+      [size]="hack.size"
+      [fileType]="hack.fileType"
+    ></app-corpo-dirt>
+  </div>
+</div>

@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutViewComponent } from './views/about-view/about-view.component';
 import { BaseViewComponent } from './views/base-view/base-view.component';
+import { BreachViewComponent } from './views/breach-view/breach-view.component';
 import { ContactViewComponent } from './views/contact-view/contact-view.component';
 import { DonateViewComponent } from './views/donate-view/donate-view.component';
 import { EnterWebsiteComponent } from './views/enter-website/enter-website.component';
@@ -38,6 +39,11 @@ const routes: Routes = [
         component: ContactViewComponent,
         data: { animation: 'ContactView' }
       },
+      {
+        path: 'breach',
+        component: BreachViewComponent,
+        data: { animation: 'ContactView' }
+      }
     ]
   }
 ];

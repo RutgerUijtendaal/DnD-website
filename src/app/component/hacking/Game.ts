@@ -23,7 +23,7 @@ export class Game {
   grid!: Grid;
   timer!: Timer;
   timerSubscription!: Subscription;
-  highestInstalled = -1;
+  highestHackInstalled = -1;
   hoveredTile: DisplayTile = DisplayTile.empty();
 
   constructor(customConfig: Partial<GameConfig> = {}) {
@@ -115,11 +115,17 @@ export class Game {
     this.timer.pause();
     this.cleanupSequences();
 
+    setTimeout(() => {
+      this.startEndScreenTransition()
+    }, 1000)
+  }
+
+  private startEndScreenTransition() {
     let highest = 0;
     this.sequences.forEach((sequence, index) => {
       if(sequence.success()) highest = index + 1;
     })
-    this.highestInstalled = highest;
+    this.highestHackInstalled = highest;
   }
 
 

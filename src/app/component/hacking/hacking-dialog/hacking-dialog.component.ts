@@ -13,7 +13,7 @@ export class HackingDialogComponent implements OnInit {
   @ViewChild('timer', { static: false }) timer!: TimeRemainingComponent;
   game: Game;
 
-  constructor(private dialogRef: MatDialogRef<HackingDialogComponent>) {
+  constructor() {
     this.game = new Game();
   }
 

@@ -1,0 +1,33 @@
+<section class="cyberpunk black">
+  <h1 class="cyberpunk cp_muted headline">{{ name }}</h1>
+</section>
+<section class="cyberpunk">
+  <div class="hack" fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="center center" fxLayoutGap.gt-sm="50px">
+    <div class="hack-description">
+      <h2 class="cyberpunk cp_muted hack-name">{{ name }}</h2>
+      <h3>{{ type }}</h3>
+      <p class="cyberpunk inverse dotted cp_muted">Contains: {{ content }}</p>
+    </div>
+    <div class="download-hack" fxLayout="row">
+      <img class="hack-image" [src]="imagePath" />
+      <div fxLayout="column" fxLayoutAlign="space-around start">
+        <div fxLayout="row" fxLayoutAlign="start center">
+          <mat-icon>attach_file</mat-icon>
+          <span class="info-type">Filetype:</span>
+          <span class="info-text">{{ fileType }}</span>
+        </div>
+        <div fxLayout="row" fxLayoutAlign="start center">
+          <mat-icon>inventory_2</mat-icon>
+          <span class="info-type">Size:</span>
+          <span class="info-text">{{ size }}</span>
+        </div>
+        <div fxLayout="row" fxLayoutAlign="start center">
+          <mat-icon>enhanced_encryption</mat-icon>
+          <span class="info-type">Hash:</span>
+          <span class="info-text">{{ hash }}</span>
+        </div>
+        <button class="cyberpunk2077 download-button" (click)="download()">{{ buttonText }}</button>
+      </div>
+    </div>
+  </div>
+</section>

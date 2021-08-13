@@ -15,7 +15,8 @@ export class ContactViewComponent implements OnInit {
 
   constructor(public dialog: MatDialog) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+  }
 
   send() {
     if (this.value.length > 0) this.buttonText = 'THANKS!';
@@ -29,8 +30,8 @@ export class ContactViewComponent implements OnInit {
   openHack() {
     const dialogRef = this.dialog.open(HackingDialogComponent);
 
-    dialogRef.afterClosed().subscribe((result) => {
-      console.log(`result: ${result}`);
+    dialogRef.afterClosed().subscribe(() => {
+      
     });
   }
 }

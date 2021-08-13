@@ -1,0 +1,10 @@
+<div class="hack-complete-container" [ngClass]="failed ? 'failed' : 'success'" fxLayout="row" fxLayoutAlign="center center">
+  <div *ngIf="failed">
+    <h1>BREACH FAILED</h1>
+  </div>
+  <div *ngIf="!failed" fxLayout="row wrap" fxLayoutAlign="center center">
+    <h1 fxFlex="100%" class="cyberpunk cp_muted" >BREACH SUCCESS</h1>
+    <h3 fxFlex="100%">UNLOCKED LEVEL: {{game.highestHackInstalled}}</h3>
+    <h4 fxFlex="100%">Redirecting ...</h4>
+  </div>
+</div>

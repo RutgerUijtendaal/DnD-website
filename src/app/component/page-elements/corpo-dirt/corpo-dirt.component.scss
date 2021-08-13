@@ -1,0 +1,67 @@
+.hack {
+  margin: 20px 0px;
+}
+
+.hack-image {
+  margin-right: 20px;
+  width: 140px;
+  height: 140px;
+}
+
+h1.hack-name {
+  font-size: 36px !important;
+}
+
+p {
+  white-space: pre-line;
+  font-size: 20px;
+}
+
+.download-button {
+  padding: 1vw 2vw;
+}
+
+.download-hack {
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 20px 5px 5px 5px;
+}
+
+.info-type {
+  margin-right: 5px;
+  font-weight: bold;
+}
+
+@media (max-width: 601px) {
+  h2 {
+    margin-top: 0px;
+  }
+
+  .headline {
+    font-size: 6vw;
+    line-height: 6vw;
+  }
+
+  .hack {
+    margin: 0px;
+  }
+  
+  .hack-image {
+    margin-right: 10px;
+    width: 100px;
+    height: 100px;
+  }
+
+  .team-hack {
+    margin: 10px;
+  }
+
+  .download-button {
+    padding: 2vw 4vw;
+  }
+
+  .download-button {
+    font-size: 12px;
+  }
+}
+

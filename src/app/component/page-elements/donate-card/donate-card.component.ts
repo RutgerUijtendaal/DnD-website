@@ -1,3 +1,4 @@
+import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
@@ -15,6 +16,14 @@ export class DonateCardComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  donate() {
+    let actionTemp = this.actionText
+    this.actionText = "DISABLED";
+    setTimeout(() => {
+      this.actionText = actionTemp
+    }, 2000)
   }
 
 }

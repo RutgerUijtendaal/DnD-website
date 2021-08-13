@@ -29,6 +29,9 @@ import { BufferComponent } from './component/hacking/buffer/buffer.component';
 import { HexDisplayComponent } from './component/hacking/hex-display/hex-display.component';
 import { SequenceRowComponent } from './component/hacking/sequence-row/sequence-row.component';
 import { TimerPipe } from './pipes/timer.pipe';
+import { HackCompleteComponent } from './component/hacking/hack-complete/hack-complete.component';
+import { BreachViewComponent } from './views/breach-view/breach-view.component';
+import { CorpoDirtComponent } from './component/page-elements/corpo-dirt/corpo-dirt.component';
 
 @NgModule({
   declarations: [
@@ -55,6 +58,9 @@ import { TimerPipe } from './pipes/timer.pipe';
     HexDisplayComponent,
     SequenceRowComponent,
     TimerPipe,
+    HackCompleteComponent,
+    BreachViewComponent,
+    CorpoDirtComponent,
   ],
   imports: [
     BrowserModule,
