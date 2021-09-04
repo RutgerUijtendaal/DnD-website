@@ -51,6 +51,12 @@ export class AboutViewComponent implements OnInit {
       imagePath: 'assets/img/team/rabbit.png',
       content: 'Can fashion a gun out of anything. \n\n Or fix an engine.'
     },
+    {
+      name: 'Atar',
+      function: 'Investigator',
+      imagePath: 'assets/img/team/atar.png',
+      content: 'He knows if you\'ve been naughty, and will tell you all about it.'
+    }
   ]
 
   constructor() { }
